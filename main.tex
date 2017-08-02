@@ -1,27 +1,20 @@
 
-\documentclass{cbxpset}
-
+\documentclass{article}
 % Automatix LaTeX build system modules
-
+\usepackage[margin=0.75in]{geometry}
 \usepackage{svg}
 \usepackage{amsmath}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-
-
-
-
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 %-------------------------------------------------------------------------
 % Document Parameters
 %-------------------------------------------------------------------------
 
 \title{General Doc Template}
 
-\subtitle{Subtitle}
-\author{Mark Buckler \{mab598\}}
-
-\institution
-{%
+\author{Mark Buckler \textit{mab598@cornell.edu} \\ \\
   School of Electrical and Computer Engineering \\
   Cornell University
 }
@@ -43,6 +36,14 @@ This is one sweet template
 \subsection{Literature Review}
 
 Cite this paper yo \cite{einstein}
+
+\subsection{Images}
+
+\begin{figure} \centering
+    \includegraphics[width=0.2\textwidth]{frame_0.png}
+    \caption{Waving Man}
+    \label{fig:waving_man}
+\end{figure}
 
 \bibliographystyle{ieee}
 \bibliography{references}
